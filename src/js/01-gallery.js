@@ -19,5 +19,3 @@ captionDelay: 250,});
 newGallery.on('show.simplelightbox', function () {
 });
 
-
-console.log(galleryItems);

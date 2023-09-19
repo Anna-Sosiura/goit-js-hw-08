@@ -10,7 +10,6 @@ refs.form.addEventListener('submit', onFormSubmit);
 refs.form.addEventListener('input', throttle(onInput, 500));
 function onInput(e) {
     formData[e.target.name]=e.target.value;
-    console.log(formData);
     localStorage.setItem('feedback-form-state',JSON.stringify(formData));
 };
 
