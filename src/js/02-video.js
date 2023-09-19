@@ -5,13 +5,9 @@ import throttle from "lodash.throttle";
     function setTime(currentTime){
         console.log(currentTime);
         localStorage.setItem('videoplayer-current-time',JSON.stringify(currentTime))}
-       
-
-            const savedSecond= localStorage.getItem('videoplayer-current-time');
+       const savedSecond= localStorage.getItem('videoplayer-current-time');
             const secondsValue=(JSON.parse(savedSecond))
 console.log(secondsValue.seconds);
-
-
 
         player.setCurrentTime(secondsValue.seconds).then(function(seconds) {
             // seconds = the actual time that the player seeked to
